@@ -72,3 +72,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* CSS custom properties */
+
+html {
+  --header-height: 100px;
+}
