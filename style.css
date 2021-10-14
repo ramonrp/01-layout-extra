@@ -1,0 +1,41 @@
+/* Mobile first approach */
+.toolbar {
+  display: none;
+}
+
+.menu-title {
+  display: none;
+}
+
+.header {
+  height: var(--header-height);
+  border: solid black;
+  /* hack to center title with fix height: ; */
+  line-height: var(--header-height);
+  background-color: var(--color-third);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.page-title {
+  color: var(--color-white);
+}
+nav {
+  position: sticky;
+  top: var(--header-height);
+  background-color: var(--color-primary);
+}
+.menu-container ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-container ul li a {
+  display: inline-block;
+  padding: 8px 32px;
+  text-decoration: none;
+  color: black;
+  background-color: var(--color-white);
+}
