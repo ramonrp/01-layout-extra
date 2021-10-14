@@ -7,6 +7,12 @@
   display: none;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   height: var(--header-height);
   /* hack to center title with fix height: ; */
@@ -39,13 +45,16 @@ nav {
   background-color: var(--color-white);
 }
 
+.page-container {
+  flex: 1;
+  background-color: aliceblue;
+}
 .list {
   display: grid;
   gap: 4px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  background-color: aliceblue;
+  gap: 8px;
   padding: 16px 32px;
 }
 
@@ -62,10 +71,22 @@ nav {
 
 .img-wrapper {
   flex-basis: 150px;
+  flex-shrink: 0;
 }
 
 .card.item img {
   width: 100%;
   display: block;
   border-radius: 50%;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: bold;
 }
