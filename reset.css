@@ -77,4 +77,8 @@ select {
 
 html {
   --header-height: 100px;
+  --color-primary: hsl(197, 37%, 24%);
+  --color-secondary: hsl(173, 58%, 39%);
+  --color-third: #e9c46a;
+  --color-white: white;
 }
