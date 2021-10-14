@@ -9,7 +9,6 @@
 
 .header {
   height: var(--header-height);
-  border: solid black;
   /* hack to center title with fix height: ; */
   line-height: var(--header-height);
   background-color: var(--color-third);
@@ -21,13 +20,13 @@
 }
 nav {
   position: sticky;
-  top: var(--header-height);
+  top: 0;
   background-color: var(--color-primary);
 }
 .menu-container ul {
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
-  padding: 4px 8px;
   list-style: none;
   margin: 0;
 }
@@ -38,4 +37,35 @@ nav {
   text-decoration: none;
   color: black;
   background-color: var(--color-white);
+}
+
+.list {
+  display: grid;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: aliceblue;
+  padding: 16px 32px;
+}
+
+.card.item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px 32px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.img-wrapper {
+  flex-basis: 150px;
+}
+
+.card.item img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
 }
